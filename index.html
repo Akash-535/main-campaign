@@ -4,13 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main campaign</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script>
         tailwind.config = {
             theme: {
+                container: {
+                    padding: '12px',
+                    center: true,
+                    screens: {
+                        sm: "600px",
+                        md: "728px",
+                        lg: "984px",
+                        xl: "1320px",
+                        "2xl": "1496px",
+                    },
+                },
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        twilight: '#3B5998',
+                        roseWhite: '#FAF9F6',
+                        steel: '#7D889E',
+                    },
+                    fontSize: {
+                        '6xl': '65px',
+                        '7xl': '80px',
+                    },
+                    lineHeight: {
+                        'lg': '116%',
+                        'xl': '118%'
+                    },
+                    maxWidth: {
+                        '4xl': '960px'
                     }
                 }
             }
@@ -18,10 +44,222 @@
     </script>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline **text-clifford**">
-        Hello world!
-    </h1>
+<body class="max-w-[1920px] mx-auto">
+    <!-- ==Hero section==  -->
+    <section class="relative overflow-hidden">
+        <!-- Layer -->
+        <div class="max-md:inset-0">
+            <img class="absolute top-0 right-0 w-[1040px] 2xl:w-[1440px] max-sm:object-cover -z-10"
+                src="./assets/images/webp/hero-layer.webp" alt="layer"></div>
+        <!-- ==Header== -->
+        <div class="flex justify-center relative z-10">
+            <div class="container px-5 text-center relative mx-auto">
+                <div class="nav pt-5">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <a href="#">
+                                <img class=" ms-5 " src="./assets/images/svg/main-logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="max-lg:hidden">
+                            <ul class="flex gap-12">
+                                <li
+                                    class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-black pb-0.5 text-white">
+                                    <a href="#" class="text-sm font-semibold text-black">Login or Register</a></li>
+                                <li><a class="text-sm text-center font-semibold border border-transparent  leading-[23.52px] text-white  rounded-full py-3 px-5 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight"
+                                        href="#">Start Free Trial</a></li>
+                            </ul>
+                        </div>
+                        <div class="lg:hidden flex flex-col gap-2 justify-end items-end relative z-20 " id="navBtn"
+                            onclick="navMenu()">
+                            <span class="w-8 h-1 bg-black btn"></span>
+                            <span class="w-8 h-1 bg-black btn1"></span>
+                            <span class="w-8 h-1 bg-black btn2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-nav lg:hidden w-full h-full fixed left-full bg-twilight duration-300 ease-linear z-10 p-4 "
+                id="mobileMenu">
+                <div class="flex flex-col gap-4 mt-4 min-h-screen justify-center relative !z-20">
+                    <ul class="flex justify-center items-center gap-7 flex-col text-white">
+                        <li
+                            class="flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-black pb-0.5 text-white">
+                            <a href="#" class="text-sm font-semibold text-black">Login or Register</a></li>
+                        <li><a class="text-sm text-center font-semibold border border-transparent  leading-[23.52px] text-twilight  rounded-full py-3 px-5 duration-300 ease-linear bg-white hover:bg-twilight hover:border-white hover:text-white"
+                                href="#">Start Free Trial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ==Hero content== -->
+        <div class="container pt-16">
+            <div class="heading text-center">
+                <h1 class="xl:text-7xl lg:text-6xl md:text-5xl max-md:text-4xl font-bold leading-xl">The Most Powerful
+                    Offline Lead Conversion Data for
+                    your <span class="text-white">Business.</span></h1>
+                <p class="text-xl font-normal text-white pt-4 pb-9 max-lg:text-lg max-md:text-base max-sm:text-sm">
+                    Seamless integration with your CRM and Facebook</p>
+                <input type="text" placeholder="Enter you work email"
+                    class="w-[570px] py-5 ps-4 rounded-full outline-none placeholder:text-lg placeholder:font-medium text-lg font-medium">
+            </div>
+            <div class="relative h-[1000px]">
+                <img class="max-w-4xl absolute left-0 top-[10%]" src="./assets/images/webp/welcome-back.webp" alt="img">
+                <img class="max-w-4xl absolute z-[4] -right-20 top-[30%]" src="./assets/images/webp/welcome-back-2.webp"
+                    alt="img2">
+            </div>
+        </div>
+    </section>
+    <!-- ==Revenue grow -->
+    <section>
+        <div class="container">
+            <div class="text-center ">
+                <h2 class="text-6xl font-bold leading-lg max-w-[1010px] mx-auto"><span class="lg:block">See your revenue
+                        grow in</span>
+                    real time with our dashboards.</h2>
+            </div>
+            <div class="container mx-auto w-full">
+                <div class="rounded-lg  p-6">
+                    <div class=" flex gap-5 justify-center mb-9">
+                        <p class="cursor-pointer tab active py-4 px-6 bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
+                            data-target="content1">
+                            CRM
+                            Integrations</p>
+                        <p class="cursor-pointer tab  py-4 px-6 bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
+                            data-target="content2">Marketing Platform Integrations</p>
+                        <p class="cursor-pointer tab py-4 px-6 text-center bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
+                            data-target="content3">Analytics</p>
+                        <p class="cursor-pointer tab py-4 px-6 text-center bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
+                            data-target="content4">Easy, Safe and Secured</p>
+                    </div>
+                    <div class="mt-4">
+                        <div id="content1" class="tabsInfo flex flex-col gap-6 shadow-lg">
+                            <div class="flex  gap-5">
+                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <div id="content2" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
+                            <div class="flex  gap-5">
+                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <div id="content3" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
+                            <div class="flex  gap-5">
+                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                        <div id="content4" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
+                            <div class="flex  gap-5">
+                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="flex  gap-5">
+                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
