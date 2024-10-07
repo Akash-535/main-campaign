@@ -15,12 +15,20 @@ const contents = document.querySelectorAll('.tabsInfo');
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tab.active');
-        isActiveTab && isActiveTab.classList.remove('active')
+        if (isActiveTab) {
+                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]');
+            isActiveTab.classList.add('bg-roseWhite', 'text-steel','py-4', 'px-6',);
+        }
+
         contents.forEach(content => content.classList.add('hidden'));
-        tab.classList.toggle('active');
+        
+        // Add active classes to the clicked tab
+        tab.classList.add('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]');
+        tab.classList.remove('bg-roseWhite', 'text-steel', 'py-4', 'px-6',);
+        
         const target = tab.getAttribute('data-target');
         const targetContent = document.getElementById(target);
-        targetContent && targetContent.classList.remove('hidden')
-        targetContent && targetContent.classList.add('flex')
+        targetContent && targetContent.classList.remove('hidden');
+        targetContent && targetContent.classList.add('flex');
     });
 });

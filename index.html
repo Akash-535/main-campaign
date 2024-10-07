@@ -119,139 +119,184 @@
             </div>
             <div class="container mx-auto w-full">
                 <div class="rounded-lg  p-6">
-                    <div class=" flex gap-5 justify-center mb-9">
-                        <p class="cursor-pointer tab active py-4 px-6 bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
+                    <div class="flex gap-5 justify-center mb-9 max-lg:overflow-x-scroll">
+                        <button
+                            class="duration-300 ease-linear tab active py-5 px-8 bg-twilight text-white rounded-full text-xl font-bold flex items-center"
                             data-target="content1">
-                            CRM
-                            Integrations</p>
-                        <p class="cursor-pointer tab  py-4 px-6 bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
-                            data-target="content2">Marketing Platform Integrations</p>
-                        <p class="cursor-pointer tab py-4 px-6 text-center bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
-                            data-target="content3">Analytics</p>
-                        <p class="cursor-pointer tab py-4 px-6 text-center bg-roseWhite rounded-full text-steel text-xl font-medium flex items-center"
-                            data-target="content4">Easy, Safe and Secured</p>
+                            CRM Integrations
+                        </button>
+                        <button
+                            class="duration-300 ease-linear tab py-4 px-6 bg-roseWhite text-steel rounded-full text-xl max-lg:text-base max-sm:text-sm font-medium flex items-center"
+                            data-target="content2">
+                            Marketing Platform Integrations
+                        </button>
+                        <button
+                            class="duration-300 ease-linear tab py-4 px-6 bg-roseWhite text-steel text-center rounded-full text-xl max-lg:text-base max-sm:text-sm font-medium flex items-center"
+                            data-target="content3">
+                            Analytics
+                        </button>
+                        <button
+                            class="duration-300 ease-linear tab py-4 px-6 bg-roseWhite text-steel text-center rounded-full text-xl max-lg:text-base max-sm:text-sm font-medium flex items-center"
+                            data-target="content4">
+                            Easy, Safe and Secured
+                        </button>
                     </div>
                     <div class="mt-4">
-                        <div id="content1" class="tabsInfo flex flex-col gap-6 shadow-lg">
-                            <div class="flex  gap-5">
-                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
+                        <!-- Content 1 -->
+                        <div id="content1" class="tabsInfo relative pt-1.5 bg-white rounded-3xl ">
+                            <img class="absolute -top-[10%] -right-10" src="./assets/images/svg/arrow-to-top.svg"
+                                alt="top">
+                            <img class="absolute -bottom-[10%] -left-10" src="./assets/images/svg/arrow-to-bottom.svg"
+                                alt="bottom">
+                            <div
+                                class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                             </div>
-                            <div class="flex  gap-5">
-                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                        <div id="content2" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
-                            <div class="flex  gap-5">
-                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
+                            <div class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] p-14">
+                                <div class="flex gap-5">
+                                    <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab
+                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                </div>
 
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                        explicabo. </p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
                             </div>
                         </div>
-                        <div id="content3" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
-                            <div class="flex  gap-5">
-                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
+                        <!-- Content 2 -->
+                        <div id="content2" class="relative pt-1.5 bg-white rounded-3xl hidden tabsInfo">
+                            <img class="absolute -top-[10%] -right-10" src="./assets/images/svg/arrow-to-top.svg"
+                                alt="top">
+                            <img class="absolute -bottom-[10%] -left-10" src="./assets/images/svg/arrow-to-bottom.svg"
+                                alt="bottom">
+                            <div
+                                class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                             </div>
-                            <div class="flex  gap-5">
-                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <div class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] p-14">
+                                <div class="flex  gap-5">
+                                    <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab
+                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                </div>
+
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                        explicabo. </p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
                             </div>
                         </div>
-                        <div id="content4" class="tabsInfo  flex-col gap-6 shadow-lg hidden">
-                            <div class="flex  gap-5">
-                                <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
+                        <!-- Content 3 -->
+                        <div id="content3" class="tabsInfo relative pt-1.5 bg-white rounded-3xl hidden">
+                            <img class="absolute -top-[10%] -right-10" src="./assets/images/svg/arrow-to-top.svg"
+                                alt="top">
+                            <img class="absolute -bottom-[10%] -left-10" src="./assets/images/svg/arrow-to-bottom.svg"
+                                alt="bottom">
+                            <div
+                                class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                             </div>
-                            <div class="flex  gap-5">
-                                <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            <div class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] p-14">
+                                <div class="flex gap-5">
+                                    <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab
+                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
                             </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <!-- Content 4 -->
+                        <div id="content4" class=" tabsInfo relative pt-1.5 bg-white rounded-3xl hidden">
+                            <img class="absolute -top-[10%] -right-10" src="./assets/images/svg/arrow-to-top.svg"
+                                alt="top">
+                            <img class="absolute -bottom-[10%] -left-10" src="./assets/images/svg/arrow-to-bottom.svg"
+                                alt="bottom">
+                            <div
+                                class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                             </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                            </div>
-                            <div class="flex  gap-5">
-                                <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
-                                <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <div class=" bg-white relative flex  flex-col gap-6 shadow-lg rounded-[48px] p-14">
+                                <div class="flex gap-5">
+                                    <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+                                <div class="flex  gap-5">
+                                    <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Sed ut perspiciatis unde omnis iste natus error sit
+                                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                        ab
+                                        illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                    </p>
+                                </div>
+
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Duis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
+
+                                <div class="flex  gap-5">
+                                    <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
+                                    <p class="text-lg font-normal">Euis aute irure dolor in reprehenderit in voluptate
+                                        velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,6 +304,7 @@
             </div>
         </div>
     </section>
+
     <script src="./assets/js/app.js"></script>
 </body>
 
