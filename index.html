@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,12 @@
     <title>Main campaign</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         tailwind.config = {
             theme: {
@@ -42,7 +48,9 @@
                     },
                     boxShadow: {
                         'common-shadow': '0px 4px 30px 0px #00000026',
-                        'step-box': '0px 4px 30px 0px #00000026'
+                        'step-box': '0px 4px 30px 0px #00000026',
+                        'button-shadow': '0px 10px 30px 0px rgba(0, 0, 0, 0.15), 0px 4px 20px 0px rgba(0, 0, 0, 0.2)',
+                        'slider-box': '0px 4px 30px 0px #00000008, 0px 0px 60px 0px #0000001A'
                     }
                 }
             }
@@ -510,7 +518,7 @@
     </section>
 
     <!-- ==How Main Campaign Sync Works== -->
-    <section class="pt-40 max-xl:pt-28 max-lg:pt-20 max-md:pt-14 min-h-screen">
+    <section class="pt-40 max-xl:pt-28 max-lg:pt-20 max-md:pt-14">
         <div class="flex justify-center items-center flex-col">
             <div class="text-center px-3">
                 <h2 class="text-6xl  font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
@@ -518,7 +526,7 @@
             </div>
             <div class="flex gap-5 mt-16 justify-center items-center flex-wrap">
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1 max-md:pb-1">
                     <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #1</p>
                         <p class="text-steel text-base font-medium max-w-[286px] mx-auto pt-3">Facebook user fills out
@@ -529,7 +537,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1 max-md:pt-1">
                     <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #2</p>
                         <p class="text-steel text-base font-medium max-w-[293px] mx-auto pt-3">Main Campaign
@@ -537,7 +545,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1 max-md:pb-1">
                     <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #3</p>
                         <p class="text-steel text-base font-medium max-w-[289px] mx-auto pt-3">Lead makes a purchase in
@@ -545,7 +553,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1 max-md:pt-1">
                     <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #4</p>
                         <p class="text-steel text-base font-medium max-w-[292px] mx-auto pt-3">Sales team updates sales
@@ -553,7 +561,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1 max-md:pb-1">
                     <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #5</p>
                         <p class="text-steel text-base font-medium max-w-[302px] mx-auto pt-3">Main Campaign attributes
@@ -564,6 +572,196 @@
             </div>
         </div>
     </section>
+
+    <!-- ==how many sales== -->
+    <section class="pt-32 max-xl:pt-28 max-lg:pt-20 max-md:pt-14">
+        <div class="container">
+            <div class="text-center">
+                <h2
+                    class="text-6xl  font-bold max-w-[991px] mx-auto leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    Understand
+                    <span class="text-twilight">how many sales</span> are driven from your campaigns</h2>
+            </div>
+            <div class="row flex items-center justify-center max-lg:flex-col">
+                <div class="w-6/12 max-lg:w-full max-w-[635px] flex flex-col justify-center max-lg:items-center">
+                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base">The issue with tracking marketing
+                        data in an online setting is that you’re not getting the full
+                        picture. Although you’re still making sales offline. it’s nearly impossible to track exactly
+                        what online campaigns are doin the job, and which ones aren’t...until now.</p>
+                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base pt-5">With Main Campaign, you can
+                        integrate
+                        your conversion data with Facebook conversion API and
+                        Offline Conversion Tracking directly.</p>
+                    <div class="flex mt-14 gap-4">
+                        <button
+                            class="text-xl text-center font-bold border border-transparent  leading-[23.52px] text-white  rounded-full py-3 px-6 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight shadow-button-shadow">Get
+                            Started</button>
+                        <p class="text-lg font-bold">Free 14 days trial. <span class="block text-base font-medium">no
+                                credit card
+                                required</span></p>
+                    </div>
+                </div>
+                <div class="w-6/12 max-lg:w-full">
+                    <img class="max-w-[855px] w-full" src="./assets/images/webp/sales-img.webp" alt="sales img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==Your Privacy Matters== -->
+    <section class="pt-28 max-lg:pt-20 max-md:pt-14">
+        <div class="container">
+            <div class="text-center mb-3">
+                <h2 class="text-6xl  font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    With Main Campaign,<span class="text-twilight"> Your Privacy Matters</span></h2>
+            </div>
+            <div class="flex gap-5 flex-wrap justify-center items-center mt-16">
+                <div
+                    class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box px-6 rounded-3xl">
+                    <img class="w-20" src="./assets/images/svg/no-sharing.svg" alt="no sharing">
+                    <p class="pt-5 text-xl font-bold text-twilight">No Sharing</p>
+                    <p class="text-lg font-medium text-steel pt-4">We Keep your information secure. We will never share
+                        any
+                        lead data to
+                        other companies.</p>
+                </div>
+                <div
+                    class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box px-6 rounded-3xl">
+                    <img class="w-20" src="./assets/images/svg/gdpr.svg" alt="no sharing">
+                    <p class="pt-5 text-xl font-bold text-twilight">GDPR, CCPA, PCI, Facebook, Google compliant</p>
+                    <p class="text-lg font-medium text-steel pt-4 max-w-[299px] mx-auto">Big Companies choose to work
+                        with us
+                        for a reason.
+                        Get a trusted partner that puts your security first.</p>
+                </div>
+                <div
+                    class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box px-6 rounded-3xl">
+                    <img class="w-20" src="./assets/images/svg/advance-security.svg" alt="no sharing">
+                    <p class="pt-5 text-xl font-bold text-twilight">Advanced Security</p>
+                    <p class="text-lg font-medium text-steel pt-4">Laser-targeted segmentation, Local store
+                        distribution, automation rules and filters, and more. We put security first.</p>
+                </div>
+                <div
+                    class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box px-6 rounded-3xl">
+                    <img class="w-20" src="./assets/images/svg/conset-based.svg" alt="no sharing">
+                    <p class="pt-5 text-xl font-bold text-twilight">Conset-based Marketing</p>
+                    <p class="text-lg font-medium text-steel pt-4">Making conset-based marketing the most scalable,
+                        efficient, and safest method for customer acquistion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==Businesses generate== -->
+    <section class="pt-36 max-xl:pt-28 max-lg:pt-20 max-md:pt-14">
+        <div class="container overflow-hidden">
+            <div class="text-center">
+                <h2
+                    class="text-6xl font-bold max-w-[887px] mx-auto leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    Businesses generate more revenue with Main Campaign</h2>
+            </div>
+            <div class="slider mt-20 gap-7">
+                <div class="bg-twilight rounded-[48px] min-h-[446px] min-w-[476px] pt-2">
+                    <div class="rounded-[48px] min-h-[446px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        <div class="flex flex-col items-center">
+                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                                src="./assets/images/svg/next-tech.svg" alt="img"></div>
+                        <p class="text-2xl font-bold text-start">Next Technologies</p>
+                        <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.” </p>
+                        <div class="flex gap-3 items-center mt-8">
+                            <img class="size-[58px]" src="./assets/images/webp/james.webp" alt="img">
+                            <div>
+                                <p class="text-2xl font-bold">James</p>
+                                <p class="text-sm font-medium">Co-Founder at Slash next technologies.</p>
+                            </div>
+                        </div>
+                        <div class="border border-iron w-[419px] rounded-full my-7"></div>
+                        <button
+                            class="text-xl text-center font-bold border border-transparent max-w-[172px] mx-auto mb-7 text-white  rounded-full py-3 px-6 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight shadow-button-shadow">Read
+                            more</button>
+                    </div>
+                </div>
+                <div class="bg-twilight rounded-[48px] min-h-[446px] min-w-[476px] pt-2">
+                    <div class="rounded-[48px] min-h-[446px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        <div class="flex flex-col items-center">
+                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                                src="./assets/images/svg/code-syne.svg" alt="img"></div>
+                        <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
+                        <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.” </p>
+                        <div class="flex gap-3 items-center mt-8">
+                            <img class="size-[58px]" src="./assets/images/webp/kathie.webp" alt="img">
+                            <div>
+                                <p class="text-2xl font-bold">Kathie</p>
+                                <p class="text-sm font-medium">Director and Founder at CodeSync Inc.</p>
+                            </div>
+                        </div>
+                        <div class="border border-iron w-[419px] rounded-full my-7"></div>
+                        <button
+                            class="text-xl text-center font-bold border border-transparent max-w-[172px] mx-auto mb-7 text-white  rounded-full py-3 px-6 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight shadow-button-shadow">Read
+                            more</button>
+                    </div>
+                </div>
+                <div class="bg-twilight rounded-[48px] min-h-[446px] min-w-[476px] pt-2">
+                    <div class="rounded-[48px] min-h-[446px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        <div class="flex flex-col items-center">
+                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                                src="./assets/images/svg/urawarrior.svg" alt="img"></div>
+                        <p class="text-2xl font-bold text-start">Urawarrior</p>
+                        <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.” </p>
+                        <div class="flex gap-3 items-center mt-8">
+                            <img class="size-[58px]" src="./assets/images/webp/bershan.webp" alt="img">
+                            <div>
+                                <p class="text-2xl font-bold">Bershan Shaw</p>
+                                <p class="text-sm font-medium">Founder at Urawarrior</p>
+                            </div>
+                        </div>
+                        <div class="border border-iron w-[419px] rounded-full my-7"></div>
+                        <button
+                            class="text-xl text-center font-bold border border-transparent max-w-[172px] mx-auto mb-7 text-white  rounded-full py-3 px-6 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight shadow-button-shadow">Read
+                            more</button>
+                    </div>
+                </div>
+                <div class="bg-twilight rounded-[48px] min-h-[446px] min-w-[476px] pt-2">
+                    <div class="rounded-[48px] min-h-[446px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        <div class="flex flex-col items-center">
+                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                                src="./assets/images/svg/code-syne.svg" alt="img"></div>
+                        <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
+                        <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.” </p>
+                        <div class="flex gap-3 items-center mt-8">
+                            <img class="size-[58px]" src="./assets/images/webp/kathie.webp" alt="img">
+                            <div>
+                                <p class="text-2xl font-bold">Kathie</p>
+                                <p class="text-sm font-medium">Director and Founder at CodeSync Inc.</p>
+                            </div>
+                        </div>
+                        <div class="border border-iron w-[419px] rounded-full my-7"></div>
+                        <button
+                            class="text-xl text-center font-bold border border-transparent max-w-[172px] mx-auto mb-7 text-white  rounded-full py-3 px-6 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight shadow-button-shadow">Read
+                            more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 
