@@ -41,7 +41,8 @@
                         '5xl': '985px',
                     },
                     boxShadow: {
-                        'tab-box': '0px 4px 30px 0px #00000026',
+                        'common-shadow': '0px 4px 30px 0px #00000026',
+                        'step-box': '0px 4px 30px 0px #00000026'
                     }
                 }
             }
@@ -118,10 +119,12 @@
     </section>
 
     <!-- ==Revenue grow -->
-    <section class=" pt-28">
+    <section class=" pt-28 max-lg:pt-20 max-md:pt-14">
         <div class="container ">
             <div class="text-center ">
-                <h2 class="text-6xl font-bold leading-lg max-w-[1010px] mx-auto"><span class="lg:block">See your revenue
+                <h2
+                    class="text-6xl font-bold leading-lg max-w-[1010px] mx-auto max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    <span class="lg:block">See your revenue
                         grow in</span>
                     real time with our dashboards.</h2>
             </div>
@@ -319,10 +322,12 @@
     </section>
 
     <!-- ==Marketing analytics== -->
-    <section class="pt-28">
+    <section class="pt-28 max-lg:pt-20 max-md:pt-14">
         <div class="container">
             <div class="text-center">
-                <h2 class="text-6xl font-bold leading-lg max-w-[790px] mx-auto">Marketing analytics that REALLY matter
+                <h2
+                    class="text-6xl font-bold leading-lg max-w-[790px] mx-auto max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    Marketing analytics that REALLY matter
                 </h2>
             </div>
             <div class="flex justify-center items-center pb-5">
@@ -352,7 +357,7 @@
                             class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class="bg-white relative flex flex-col gap-6 shadow-tab-box rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6">
+                            class="bg-white relative flex flex-col gap-6 shadow-common-shadow rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6">
                             <div class="flex gap-5">
                                 <img class=" max-md:mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -472,7 +477,7 @@
                             class="absolute inset-0 h-40 rounded-[48px] mx-auto  bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class=" bg-white relative flex  flex-col gap-6 shadow-tab-box rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
+                            class=" bg-white relative flex  flex-col gap-6 shadow-common-shadow rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
                             <div class="flex gap-5">
                                 <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -498,6 +503,62 @@
                                     velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==How Main Campaign Sync Works== -->
+    <section class="pt-40 max-xl:pt-28 max-lg:pt-20 max-md:pt-14 min-h-screen">
+        <div class="flex justify-center items-center flex-col">
+            <div class="text-center px-3">
+                <h2 class="text-6xl  font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    How <span class="text-twilight">Main Campaign</span> Sync Works</h2>
+            </div>
+            <div class="flex gap-5 mt-16 justify-center items-center flex-wrap">
+                <div
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
+                        <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #1</p>
+                        <p class="text-steel text-base font-medium max-w-[286px] mx-auto pt-3">Facebook user fills out
+                            your
+                            Facebook
+                            ad’s instant
+                            lead form</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1">
+                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5">
+                        <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #2</p>
+                        <p class="text-steel text-base font-medium max-w-[293px] mx-auto pt-3">Main Campaign
+                            automatically syncs inbound Facebook leads to sales CRM</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
+                        <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #3</p>
+                        <p class="text-steel text-base font-medium max-w-[289px] mx-auto pt-3">Lead makes a purchase in
+                            an offline setting (example; In person)</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pb-1">
+                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5">
+                        <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #4</p>
+                        <p class="text-steel text-base font-medium max-w-[292px] mx-auto pt-3">Sales team updates sales
+                            CRM with the Lead’s purchase revenue</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1">
+                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center  shadow-step-box px-5">
+                        <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #5</p>
+                        <p class="text-steel text-base font-medium max-w-[302px] mx-auto pt-3">Main Campaign attributes
+                            Lead’s purchase revenue to Facebook marketing campaigns. Now you know exactly which
+                            campaigns are driving purchases for your business</p>
                     </div>
                 </div>
             </div>
