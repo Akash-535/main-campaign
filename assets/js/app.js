@@ -16,14 +16,14 @@ tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tab.active');
         if (isActiveTab) {
-                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]');
+                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]','max-lg:text-lg','max-md:text-base','max-sm:text-sm');
             isActiveTab.classList.add('bg-roseWhite', 'text-steel','py-4', 'px-6',);
         }
 
         contents.forEach(content => content.classList.add('hidden'));
         
         // Add active classes to the clicked tab
-        tab.classList.add('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]');
+        tab.classList.add('active', 'bg-twilight', 'text-white', 'py-5', 'px-8', 'font-bold','text-[22px]','max-lg:text-lg','max-md:text-base','max-sm:text-sm',);
         tab.classList.remove('bg-roseWhite', 'text-steel', 'py-4', 'px-6',);
         
         const target = tab.getAttribute('data-target');
