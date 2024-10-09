@@ -51,14 +51,13 @@ tabTwo.forEach(tab => {
 $(".slider").slick({
     dots: true,
     infinite: true,
-    speed: 300,
+    speed: 2000,
     centerMode: true,
        slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 900,
     infinite: true,
-    centerPadding: '60px',
     variableWidth: true,
     responsive: [
         {
@@ -74,7 +73,7 @@ $(".slider").slick({
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: true,
@@ -89,3 +88,47 @@ $(".slider").slick({
         },
         ]
 });
+// footer slider
+
+
+$(".slider-footer").slick({
+    speed: 2000,
+      cssEase: 'linear',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    infinite: true,
+    swipeToSlide: true,
+    centerMode: true,
+    focusOnSelect: true,
+    nextArrow: ".prev",
+    prevArrow: ".next",
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                     }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                         }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed:0,
+            }
+        },
+      
+    ]
+});
+
+
+

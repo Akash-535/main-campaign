@@ -24,6 +24,9 @@
 * {
   font-family: "thicccboi", sans-serif;
 }
+::selection {
+  color: pink;
+}
 /* ===navbar=== */
 .mobile-nav.active {
   left: 0;
@@ -47,6 +50,12 @@
 .active .btn1 {
   opacity: 0;
 }
+/* ==tab== */
+.scroll-w-0 {
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+/* ==slider== */
 .slider .slick-list {
   overflow: unset !important;
 }
@@ -63,11 +72,29 @@
 }
 .slider .slick-dots .slick-active {
   width: 10px;
-  background-color: darkblue;
+  background-color: #3b5998;
   border-radius: 21px;
   height: 10px;
 }
 
 .slider .slick-dots li button:before {
   color: transparent !important;
+}
+.prev {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.next {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+.slider-footer .slick-track {
+  display: flex;
+  gap: 20px;
 }
