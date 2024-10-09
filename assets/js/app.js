@@ -90,7 +90,6 @@ $(".slider").slick({
 });
 // footer slider
 
-
 $(".slider-footer").slick({
     speed: 2000,
       cssEase: 'linear',
@@ -108,6 +107,8 @@ $(".slider-footer").slick({
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed:0,
                      }
         },
         {
@@ -122,13 +123,8 @@ $(".slider-footer").slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                autoplay:true,
-                autoplaySpeed:0,
-            }
+                           }
         },
       
     ]
 });
-
-
-
