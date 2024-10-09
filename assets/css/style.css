@@ -1,9 +1,13 @@
 @font-face {
   font-family: thicccboi;
+  src: url(../fonts/THICCCBOI-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: thicccboi;
   src: url(../fonts/THICCCBOI-Regular.ttf);
   font-weight: 400;
 }
-
 @font-face {
   font-family: thicccboi;
   src: url(../fonts/THICCCBOI-Medium.ttf);
