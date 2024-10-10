@@ -65,11 +65,11 @@
 }
 .slider .slick-track {
   display: flex;
-  gap: 30px;
+  gap: 47px;
 }
 
 .slider .slick-dots li {
-  background-color: #faf9f6;
+  background-color: #d9d9d9;
   border-radius: 100px;
   width: 10px;
   height: 10px;
@@ -84,7 +84,7 @@
   position: absolute !important;
   display: flex;
   margin-top: 10px;
-  bottom: -30px !important;
+  bottom: -60px !important;
   justify-content: center;
 }
 .slider .slick-dots li button:before {
