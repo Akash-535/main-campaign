@@ -53,7 +53,8 @@
                         roseWhite: '#FAF9F6',
                         steel: '#7D889E',
                         iron: '#D9D9D9',
-                        milkWhite: '#FAF9F6'
+                        milkWhite: '#FAF9F6',
+                        smokyBlack: '#0A0A0D'
                     },
                     fontSize: {
                         '6xl': '65px',
@@ -821,16 +822,24 @@
                 </button>
             </div>
             <div class="slider-footer flex overflow-hidden">
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/noguchr.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/airbnb.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/pro-bussiness.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/ariba.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/idesign.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/brooks.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/okuma.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/island.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/ariba.svg" alt="#"></a></div>
-                <div><a href="#slider-bottom"><img src="./assets/images/svg/idesign.svg" alt="#"></a></div>
+                <img [aria-hidden="true" ] src="./assets/images/svg/noguchr.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-7">
+                <img [aria-hidden="true" ] src="./assets/images/svg/airbnb.svg" alt="noguchi"
+                    class="max-w-[118px] max-h-9">
+                <img [aria-hidden="true" ] src="./assets/images/svg/pro-bussiness.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-7">
+                <img [aria-hidden="true" ] src="./assets/images/svg/ariba.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-8">
+                <img [aria-hidden="true" ] src="./assets/images/svg/idesign.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-7">
+                <img [aria-hidden="true" ] src="./assets/images/svg/brooks.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-3.5">
+                <img [aria-hidden="true" ] src="./assets/images/svg/okuma.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-7">
+                <img [aria-hidden="true" ] src="./assets/images/svg/island.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-10">
+                <img [aria-hidden="true" ] src="./assets/images/svg/brooks.svg" alt="noguchi"
+                    class="max-w-[117px] max-h-7">
             </div>
             <div class="absolute -right-16 top-[35%] group max-xl:hidden">
                 <button
@@ -850,30 +859,37 @@
         <div class="border border-dashed max-w-[1600px] border-twilight mx-auto mb-16 max-md:mb-10 max-sm:mb-8"></div>
         <div class="flex max-w-[1600px] mx-auto flex-wrap max-lg:justify-center max-lg:items-center px-3">
             <div class="w-4/12 max-lg:w-full flex max-lg:justify-center max-lg:items-center max-lg:mb-5"> <a
-                    href="#footer"><img src="./assets/images/svg/main-logo.svg" alt="img"></a></div>
+                    href="#footer"><img src="./assets/images/svg/footer-logo.svg" alt="img"></a></div>
             <div class="w-2/12 max-lg:w-6/12 flex-col flex max-lg:items-center gap-6 max-md:gap-3">
                 <p class="font-bold text-xl max-sm:text-lg">About Us</p>
                 <ul class="list-none flex flex-col gap-4 max-md:gap-2">
-                    <li><a href="#home" class="text-base max-sm:text-sm hover:text-gray-600">Home</a></li>
-                    <li><a href="#about-us" class="text-base font-light max-sm:text-sm hover:text-gray-600">About us</a>
+                    <li><a href="#home" class="text-base max-sm:text-sm text-smokyBlack hover:text-twilight">HOME</a>
                     </li>
-                    <li><a href="#pricing" class="text-base font-light max-sm:text-sm hover:text-gray-600">Pricing</a>
+                    <li><a href="#about-us"
+                            class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-twilight">About us</a>
                     </li>
-                    <li><a href="#pricing" class="text-base font-light max-sm:text-sm hover:text-gray-600">Start free
+                    <li><a href="#pricing"
+                            class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-twilight">Pricing</a>
+                    </li>
+                    <li><a href="#pricing"
+                            class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-twilight">Start free
                             trial</a></li>
                 </ul>
             </div>
             <div class="w-2/12 max-lg:w-6/12 flex-col max-lg:items-center flex gap-6 max-md:gap-3">
-                <p class="font-bold text-xl max-md:text-lg">Support</p>
+                <p class="font-bold text-xl max-md:text-lg">SUPPORT</p>
                 <ul class="list-none flex flex-col gap-4 max-md:gap-2">
-                    <li><a href="#home" class="text-base font-light max-sm:text-sm hover:text-gray-600">Contact us</a>
+                    <li><a href="#home"
+                            class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-twilight">Contact
+                            us</a>
                     </li>
-                    <li><a href="#about-us" class="text-base font-light max-sm:text-sm hover:text-gray-600">FAQs</a>
+                    <li><a href="#about-us"
+                            class="text-base font-light max-sm:text-sm text-smokyBlack hover:text-twilight">FAQs</a>
                     </li>
                 </ul>
             </div>
             <div class="w-4/12 max-lg:w-full max-lg:justify-center max-lg:items-center flex flex-col gap-5 max-md:mt-3">
-                <p class="font-bold text-xl max-sm:text-lg">subscribe</p>
+                <p class="font-bold text-xl max-sm:text-lg">SUBSCRIBE</p>
                 <div class="flex flex-col gap-5">
                     <input type="email"
                         class="w-[477px] max-xl:w-full border p-5 rounded-2xl placeholder:text-[#0A0A0D] text-[#0A0A0D] outline-none border-[#E1E1FF] placeholder:font-light font-light placeholder:text-base text-base"
@@ -890,35 +906,25 @@
         <div class="border border-dashed max-w-[1600px] border-twilight mx-auto mt-16 max-md:mt-10 max-sm:mt-8"></div>
         <div
             class="max-w-[1600px] mx-auto py-12 flex justify-between max-md:flex-col gap-6 max-md:justify-center max-md:items-center">
-            <p>Privacy Policy • Terms & Conditions</p>
+            <a class="text-sm font-light" href="/">Privacy Policy • Terms & Conditions</a>
             <div class="flex gap-4">
-                <div>
-                    <div
-                        class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center">
-                        <a href="https://facebook.com" target="_blank"><img class=""
-                                src="./assets/images/svg/facebook.svg" alt="facebook"></a></div>
-                </div>
-                <div>
-                    <div
-                        class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center">
-                        <a href="https://instagram.com" target="_blank"><img class=""
-                                src="./assets/images/svg/insta.svg" alt="facebook"></a>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center">
-                        <a href="https://linkedin.com" target="_blank"><img class=""
-                                src="./assets/images/svg/linked-in.svg" alt="facebook"></a></div>
-                </div>
-                <div>
-                    <div
-                        class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center">
-                        <a href="https://www.cricbuzz.com/" target="_blank"><img class=""
-                                src="./assets/images/svg/cb.svg" alt="facebook"></a></div>
-                </div>
+
+                <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+                    href="https://facebook.com" target="_blank"><img src="./assets/images/svg/facebook.svg"
+                        alt="facebook"></a>
+                <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+                    href="https://instagram.com" target="_blank"><img src="./assets/images/svg/insta.svg"
+                        alt="facebook"></a>
+
+                <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+                    href="https://linkedin.com" target="_blank"><img src="./assets/images/svg/linked-in.svg"
+                        alt="facebook"></a>
+
+                <a class="size-12 bg-[#EEEDEC] hover:shadow-button-shadow rounded-full flex items-center justify-center cursor-pointer"
+                    href="https://www.cricbuzz.com/" target="_blank"><img src="./assets/images/svg/cb.svg"
+                        alt="facebook"></a>
+
             </div>
-        </div>
     </footer>
 
     <!-- ==JS links== -->
