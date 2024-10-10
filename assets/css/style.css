@@ -90,20 +90,7 @@
 .slider .slick-dots li button:before {
   color: transparent !important;
 }
-.prev {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 200ms linear;
-}
-.next {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 200ms linear;
-}
+
 .slider-footer .slick-track {
   display: flex;
   gap: 20px;

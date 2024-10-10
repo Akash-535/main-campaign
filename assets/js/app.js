@@ -46,7 +46,6 @@ tabTwo.forEach(tab => {
         targetContent && targetContent.classList.remove('hidden');
     });
 });
-
 // slider
 $(".slider").slick({
     dots: true,
@@ -89,7 +88,6 @@ $(".slider").slick({
         ]
 });
 // footer slider
-
 $(".slider-footer").slick({
     speed: 2000,
       cssEase: 'linear',
@@ -128,3 +126,24 @@ $(".slider-footer").slick({
       
     ]
 });
+// card 3d hover
+const card = document.querySelectorAll('.card');
+        card.forEach((card) => {
+            card.addEventListener('mousemove', (e) => {
+                const cardBox = card.getBoundingClientRect();
+                const cardWidth = cardBox.width;
+                const cardHeight = cardBox.height;
+                const centerX = cardBox.left + cardWidth / 2;
+                const centerY = cardBox.top + cardHeight / 2;
+
+                const mouseX = e.clientX - centerX;
+                const mouseY = e.clientY - centerY;
+                const rotateX = (mouseY / cardHeight) * 45;
+                const rotateY = -(mouseX / cardWidth) * 45;
+                card.style.transform =
+                    `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale(1)`;
+            });
+        });
