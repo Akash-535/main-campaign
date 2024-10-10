@@ -112,6 +112,8 @@ $(".slider-footer").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                autoplay:true,
+                autoplaySpeed:0,
                          }
         },
         {
@@ -119,6 +121,8 @@ $(".slider-footer").slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                  autoplay:true,
+                autoplaySpeed:0,
                            }
         },
       
