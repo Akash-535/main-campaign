@@ -27,7 +27,7 @@ tabs.forEach(tab => {
         targetContent && targetContent.classList.remove('hidden');
     });
 });
-// Tab 2
+// Tabs 2
 const tabTwo = document.querySelectorAll('.tabTwo');
 const contentsTwo = document.querySelectorAll('.tabsInfoTwo');
 
@@ -46,6 +46,7 @@ tabTwo.forEach(tab => {
         targetContent && targetContent.classList.remove('hidden');
     });
 });
+
 // slider
 $(".slider").slick({
     dots: true,
@@ -55,7 +56,7 @@ $(".slider").slick({
        slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 900,
+    autoplaySpeed: 2000,
     infinite: true,
     variableWidth: true,
     responsive: [
@@ -64,9 +65,7 @@ $(".slider").slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                
+                               
             }
         },
         {
@@ -74,8 +73,7 @@ $(".slider").slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true,
+              
             }
         },
         {
@@ -138,8 +136,8 @@ const card = document.querySelectorAll('.card');
 
                 const mouseX = e.clientX - centerX;
                 const mouseY = e.clientY - centerY;
-                const rotateX = (mouseY / cardHeight) * 45;
-                const rotateY = -(mouseX / cardWidth) * 45;
+                const rotateX = (mouseY / cardHeight) * 25;
+                const rotateY = -(mouseX / cardWidth) * 25;
                 card.style.transform =
                     `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
             });
