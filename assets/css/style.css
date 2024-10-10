@@ -80,7 +80,13 @@
   border-radius: 21px;
   height: 10px;
 }
-
+.slider .slick-dots {
+  position: absolute !important;
+  display: flex;
+  margin-top: 10px;
+  bottom: -30px !important;
+  justify-content: center;
+}
 .slider .slick-dots li button:before {
   color: transparent !important;
 }
