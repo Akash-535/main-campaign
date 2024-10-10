@@ -89,12 +89,14 @@
             class="absolute top-0 max-sm:h-[400px] right-0 max-sm:h-9/12 -z-10 max-w-[1317px] w-full pointer-events-none">
         <!-- ==Header== -->
         <div class="flex justify-center relative z-10">
-            <div class="container px-5 text-center relative mx-auto">
-                <div class="nav pt-[77px] max-md:pt-8 max-sm:pt-4">
+            <div class="container px-5 text-center relative mx-auto max-w-[1392px]">
+                <div class="nav pt-[77px] max-lg:pt-2 max-lg:pb-2 max-md:pt-8 max-sm:pt-4">
                     <div class="flex justify-between items-center">
                         <div>
                             <a href="#">
-                                <img class=" ms-5 " src="./assets/images/svg/main-logo.svg" alt="logo"></a>
+                                <img class="ms-5 max-md:hidden" src="./assets/images/svg/main-logo.svg" alt="logo"></a>
+                            <a href="#"><img class="md:hidden ms-5 size-16" src="./assets/images/svg/m-logo.svg"
+                                    alt="logo"></a>
                         </div>
                         <div class="max-lg:hidden">
                             <ul class="flex gap-12">
@@ -114,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mobile-nav lg:hidden w-full h-full fixed left-full bg-twilight duration-300 ease-linear z-10 p-4 "
+            <div class="mobile-nav lg:hidden w-full h-full fixed left-full bg-[#4CCEE8] duration-300 ease-linear z-10 p-4 "
                 id="mobileMenu">
                 <div class="flex flex-col gap-4 mt-4 min-h-screen justify-center relative !z-20">
                     <ul class="flex justify-center items-center gap-7 flex-col text-white">
@@ -128,16 +130,17 @@
             </div>
         </div>
         <!-- ==Hero content== -->
-        <div class="container px-3 pb-28 max-xl:pb-24 max-lg:pb-20 max-md:pb-16 max-sm:pb-14 pt-16 max-md:pt-8 mx-auto">
+        <div
+            class="container px-3 pb-28 max-xl:pb-24 max-lg:pb-20 max-md:pb-16 max-sm:pb-14 pt-16 max-md:pt-12 mx-auto">
             <h1
-                class="text-black text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl leading-[120%] text-center font-bold text">
+                class="text-black text-7xl max-lg:text-[55px] max-md:text-5xl max-sm:text-3xl leading-[120%] max-lg:leading-[113%] text-center font-bold text">
                 The Most Powerful Offline Lead Conversion Data for your <span class="text-white"> Business.</span></h1>
             <p class="font-normal pb-10 text-white text-xl max-lg:text-xl max-sm:text-base text-center pt-4">Seamless
                 integration
                 with your CRM and Facebook</p>
             <div class="max-w-[570px] max-lg:justify-normal max-lg:items-center max-lg:flex -mt-0.5 w-full mx-auto">
                 <input type="email" placeholder="Enter you work email"
-                    class="placeholder:text-xl max-lg:w-9/12 placeholder:font-medium placeholder:leading-[150%] w-full px-4 rounded-[60px] text-xl  mx-auto py-5 max-lg:py-4 max-md:py-3 outline-none border border-[#E1E1FF] ">
+                    class="placeholder:text-xl max-lg:w-full max-lg:shadow-button-shadow max-md:placeholder:text-lg max-md:text-lg placeholder:font-medium placeholder:leading-[150%] w-full px-4 rounded-[60px] text-xl  mx-auto py-5 max-lg:py-4 max-md:py-3 outline-none border border-[#E1E1FF] ">
             </div>
         </div>
         <div class="md:min-h-[800px] w-full max-w-[1485px] max-md:justify-center max-md:px-4 mx-auto relative">
@@ -153,7 +156,7 @@
         <div class="container ">
             <div class="text-center ">
                 <h2
-                    class="text-6xl font-bold leading-lg max-w-[1010px] mx-auto max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    class="text-6xl font-bold leading-lg max-w-[1010px] mx-auto max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     <span class="lg:block">See your revenue
                         grow in</span>
                     real time with our dashboards.</h2>
@@ -162,28 +165,29 @@
                 <div
                     class="max-w-[1034px] mx-auto flex justify-between items-center max-xl:overflow-x-auto gap-5 my-8 scroll-w-0">
                     <button data-target="content1"
-                        class="py-4 px-8 min-w-[241px] tab active font-medium bg-twilight text-white rounded-[60px] text-xl max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">CRM
+                        class="py-4 px-8 min-w-[241px] max-md:min-w-[200px] tab active font-medium bg-twilight text-white rounded-[60px] text-xl max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">CRM
                         Integrations</button>
                     <button data-target="content2"
-                        class="py-4 min-w-[337px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Marketing
+                        class="py-4 min-w-[337px] max-md:min-w-[290px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Marketing
                         Platform Integrations</button>
                     <button data-target="content3"
-                        class="py-4 px-7 min-w-[143px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Analytics</button>
+                        class="py-4 px-7 min-w-[143px] max-md:min-w-[110px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Analytics</button>
                     <button data-target="content4"
-                        class="py-4 min-w-[265px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Easy,
+                        class="py-4 min-w-[265px] max-md:min-w-[230px] tab font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Easy,
                         Safe and Secured</button>
                 </div>
                 <div class="mt-4">
                     <!-- Content 1 -->
-                    <div id="content1" class="tabsInfo relative pt-1.5 bg-white rounded-3xl ">
+                    <div id="content1" class="tabsInfo relative pt-1.5 bg-white rounded-3xl">
                         <img class="absolute -top-[11%] -right-12 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-top.svg" alt="top">
                         <img class="absolute -bottom-[11%] -left-12 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1 ">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1 ">
                         </div>
-                        <div class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:p-14 p-4">
+                        <div
+                            class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:p-14 p-4">
                             <div class="flex gap-5">
                                 <img class="mb-12 max-md:mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -232,9 +236,10 @@
                         <img class="absolute -bottom-[10%] -left-10 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
-                        <div class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:p-14 p-4">
+                        <div
+                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:p-14 p-4">
                             <div class="flex gap-5">
                                 <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Sed ut perspiciatis
@@ -274,9 +279,10 @@
                         <img class="absolute -bottom-[10%] -left-10 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
-                        <div class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:p-14 p-4">
+                        <div
+                            class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:p-14 p-4">
                             <div class="flex gap-5">
                                 <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -310,9 +316,10 @@
                         <img class="absolute -bottom-[10%] -left-10 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
-                        <div class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:p-14 p-4">
+                        <div
+                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:p-14 p-4">
                             <div class="flex gap-5">
                                 <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -357,7 +364,7 @@
         <div class="container">
             <div class="text-center">
                 <h2
-                    class="text-6xl font-bold leading-lg max-w-[790px] mx-auto max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    class="text-6xl font-bold leading-lg max-w-[790px] mx-auto max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     Marketing analytics that REALLY matter
                 </h2>
             </div>
@@ -369,16 +376,16 @@
                 <div
                     class="max-w-[934px] mx-auto flex justify-between items-center max-lg:overflow-x-auto gap-2 mb-7 scroll-w-0">
                     <button data-target="content5"
-                        class="py-4  min-w-[161px] tabTwo active font-medium bg-twilight text-white rounded-[60px] text-xl max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Spending</button>
+                        class="py-4  min-w-[161px] max-md:min-w-[135px] tabTwo active font-medium bg-twilight text-white rounded-[60px] text-xl max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Spending</button>
                     <button data-target="content6"
-                        class="py-4 min-w-[112px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Reach</button>
+                        class="py-4 min-w-[112px] max-md:min-w-[94px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Reach</button>
                     <button data-target="content7"
-                        class="py-4 px-7 min-w-[123px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Revenue</button>
+                        class="py-4 px-7 min-w-[123px] max-md:min-w-[93px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 flex justify-center items-center ease-linear">Revenue</button>
                     <button data-target="content8"
-                        class="py-4 min-w-[180px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Inbound
+                        class="py-4 min-w-[180px] max-md:min-w-[160px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Inbound
                         Leads</button>
                     <button data-target="content9"
-                        class="py-4 min-w-[180px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Campaigns</button>
+                        class="py-4 min-w-[180px] max-md:min-w-[160px] tabTwo font-medium text-steel rounded-[60px] border border-solid border-iron text-xl leading-[110%] transition-300ms max-xl:text-lg max-lg:text-base max-sm:text-sm hover:bg-twilight hover:bg-opacity-20 duration-300 ease-linear">Campaigns</button>
                 </div>
                 <div class="mt-4 max-w-[1123px] mx-auto">
                     <!-- Content 5 -->
@@ -386,10 +393,10 @@
                         <img class="absolute -bottom-[20%] right-28 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class="bg-white relative flex flex-col gap-2 shadow-common-shadow rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6">
+                            class="bg-white relative flex flex-col gap-2 shadow-common-shadow rounded-[48px] max-sm:rounded-3xl md:py-12 md:ps-8 md:pr-9 p-6">
                             <div class="flex gap-5">
                                 <img class=" max-md:mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -422,10 +429,10 @@
                         <img class="absolute -bottom-[26%] right-24 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
+                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:py-12 md:ps-8 md:pr-9 p-6 ">
                             <div class="flex gap-5">
                                 <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Ut perspiciatis unde
@@ -446,10 +453,10 @@
                         <img class="absolute -bottom-[21%] right-20 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
+                            class="bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:py-12 md:ps-8 md:pr-9 p-6 ">
                             <div class="flex gap-5">
                                 <img class="" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Ut perspiciatis unde
@@ -473,10 +480,10 @@
                         <img class="absolute -bottom-[19%] right-24 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
+                            class=" bg-white relative flex flex-col gap-6 shadow-lg rounded-[48px] max-sm:rounded-3xl md:py-12 md:ps-8 md:pr-9 p-6 ">
                             <div class="flex gap-5">
                                 <img class="mb-6" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Sed ut perspiciatis
@@ -506,10 +513,10 @@
                         <img class="absolute -bottom-[19%] right-24 max-lg:hidden pointer-events-none"
                             src="./assets/images/svg/arrow-to-bottom.svg" alt="bottom">
                         <div
-                            class="absolute inset-0 h-40 rounded-[48px] mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
+                            class="absolute inset-0 h-40 rounded-[48px] max-sm:rounded-3xl mx-auto bg-gradient-to-r from-sky-400 to-cyan-300 p-1">
                         </div>
                         <div
-                            class=" bg-white relative flex flex-col gap-6 shadow-common-shadow rounded-[48px] md:py-12 md:ps-8 md:pr-9 p-6 ">
+                            class=" bg-white relative flex flex-col gap-6 shadow-common-shadow rounded-[48px] max-sm:rounded-3xl md:py-12 md:ps-8 md:pr-9 p-6 ">
                             <div class="flex gap-5">
                                 <img class="mb-12" src="./assets/images/svg/right-tick.svg" alt="img">
                                 <p class="text-lg font-normal max-md:text-base max-sm:text-sm">Lorem ipsum dolor sit
@@ -545,7 +552,7 @@
     <section class="pt-40 max-xl:pt-28 max-lg:pt-20 max-md:pt-14">
         <div class="flex justify-center items-center flex-col">
             <div class="text-center px-3">
-                <h2 class="text-6xl font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                <h2 class="text-6xl font-bold leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     How <span class="text-twilight">Main Campaign</span> Sync Works</h2>
             </div>
             <div class="flex gap-5 mt-16 max-md:mt-12 max-sm:mt-9 justify-center items-center flex-wrap">
@@ -585,8 +592,8 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[192px] min-w-[327px] pt-1 max-md:pb-1 card">
-                    <div class="min-h-[192px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5">
+                    class="bg-gradient-to-l from-[#50EDFF] via-[#48B8DA] to-[#3B5998] rounded-2xl min-h-[193px] min-w-[327px] pt-1 max-md:pb-1 card">
+                    <div class="min-h-[193px] min-w-[327px] bg-white rounded-2xl text-center shadow-step-box px-5 pb-4">
                         <p class="text-2xl font-bold text-twilight pb-0.5 pt-4">Step #5</p>
                         <p class="text-steel text-base font-medium max-w-[302px] mx-auto pt-3">Main Campaign attributes
                             Lead’s purchase revenue to Facebook marketing campaigns. Now you know exactly which
@@ -602,17 +609,19 @@
         <div class="container">
             <div class="text-center">
                 <h2
-                    class="text-6xl font-bold max-w-[991px] mx-auto leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    class="text-6xl font-bold max-w-[991px] mx-auto leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     Understand
                     <span class="text-twilight">how many sales</span> are driven from your campaigns</h2>
             </div>
-            <div class="row flex items-center justify-center max-xl:flex-col">
+            <div class="row flex items-center justify-center max-xl:flex-col mt-6 ">
                 <div class="w-6/12 max-xl:w-full max-w-[635px] flex flex-col justify-center max-lg:items-center">
-                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base">The issue with tracking marketing
+                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base max-md:text-center">The issue with
+                        tracking marketing
                         data in an online setting is that you’re not getting the full
                         picture. Although you’re still making sales offline. it’s nearly impossible to track exactly
                         what online campaigns are doin the job, and which ones aren’t...until now.</p>
-                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base pt-5">With Main Campaign, you can
+                    <p class="text-xl font-medium max-md:text-lg max-sm:text-base pt-5 max-md:text-center">With Main
+                        Campaign, you can
                         integrate
                         your conversion data with Facebook conversion API and
                         Offline Conversion Tracking directly.</p>
@@ -626,7 +635,7 @@
                     </div>
                 </div>
                 <div class="w-6/12 max-xl:w-full">
-                    <img class="min-w-[855px] max-lg:min-w-[600px] max-md:min-w-[400px] max-sm:min-w-[341px]"
+                    <img class="min-w-[855px] max-2xl:min-w-[700px] max-lg:min-w-[600px] max-md:min-w-[400px] max-sm:min-w-[341px]"
                         src="./assets/images/webp/sales-img.webp" alt="sales img">
                 </div>
             </div>
@@ -637,13 +646,13 @@
     <section class="pt-28 max-lg:pt-20 max-md:pt-14">
         <div class="container">
             <div class="text-center mb-3">
-                <h2 class="text-6xl font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                <h2 class="text-6xl font-bold leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     With Main Campaign,<span class="text-twilight"> Your Privacy Matters</span></h2>
             </div>
             <div class="flex gap-12 max-2xl:flex-wrap justify-center items-center pt-[76px] max-md:mt-12 max-sm:mt-9">
                 <div
                     class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box hover:shadow-button-shadow duration-300 ease-linear px-6 rounded-3xl card">
-                    <img class="w-20" src="./assets/images/svg/no-sharing.svg" alt="no sharing">
+                    <img class="size-20 max-sm:size-16" src="./assets/images/svg/no-sharing.svg" alt="no sharing">
                     <p class="pt-5 text-xl font-bold text-twilight">No Sharing</p>
                     <p class="text-lg font-medium text-steel pt-4">We Keep your information secure. We will never share
                         any
@@ -652,7 +661,7 @@
                 </div>
                 <div
                     class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box hover:shadow-button-shadow duration-300 ease-linear px-6 rounded-3xl card">
-                    <img class="w-20" src="./assets/images/svg/gdpr.svg" alt="no sharing">
+                    <img class="size-20 max-sm:size-16" src="./assets/images/svg/gdpr.svg" alt="no sharing">
                     <p class="pt-5 text-xl font-bold text-twilight">GDPR, CCPA, PCI, Facebook, Google compliant</p>
                     <p class="text-lg font-medium text-steel pt-4 max-w-[299px] mx-auto">Big Companies choose to work
                         with us
@@ -661,14 +670,14 @@
                 </div>
                 <div
                     class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box hover:shadow-button-shadow duration-300 ease-linear px-6 rounded-3xl card">
-                    <img class="w-20" src="./assets/images/svg/advance-security.svg" alt="no sharing">
+                    <img class="size-20 max-sm:size-16" src="./assets/images/svg/advance-security.svg" alt="no sharing">
                     <p class="pt-5 text-xl font-bold text-twilight">Advanced Security</p>
                     <p class="text-lg font-medium text-steel pt-4">Laser-targeted segmentation, Local store
                         distribution, automation rules and filters, and more. We put security first.</p>
                 </div>
                 <div
                     class="w-[351px] min-h-[312px] text-center flex flex-col justify-center items-center shadow-step-box hover:shadow-button-shadow duration-300 ease-linear px-6 rounded-3xl card">
-                    <img class="w-20" src="./assets/images/svg/conset-based.svg" alt="no sharing">
+                    <img class="size-20 max-sm:size-16" src="./assets/images/svg/conset-based.svg" alt="no sharing">
                     <p class="pt-5 text-xl font-bold text-twilight">Conset-based Marketing</p>
                     <p class="text-lg font-medium text-steel pt-4">Making conset-based marketing the most scalable,
                         efficient, and safest method for customer acquistion.</p>
@@ -682,16 +691,16 @@
         <div class="container overflow-hidden pb-14 xl:max-w-[1600px]">
             <div class="text-center pb-20">
                 <h2
-                    class="text-6xl font-bold max-w-[887px] mx-auto leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                    class="text-6xl font-bold max-w-[887px] mx-auto leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     Businesses generate more revenue with Main Campaign</h2>
             </div>
             <div class="slider mt-10 gap-7 max-sm:mx-4">
                 <div
-                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[375px] max-md:min-w-[425px]  min-w-[476px] pt-2">
+                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-md:min-w-[425px]  min-w-[476px] pt-2">
                     <div
-                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[400px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
                         <div class="flex flex-col items-center">
-                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                            <img class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-16 shadow-slider-box rounded-full"
                                 src="./assets/images/svg/next-tech.svg" alt="img"></div>
                         <p class="text-2xl font-bold text-start">Next Technologies</p>
                         <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -712,11 +721,11 @@
                     </div>
                 </div>
                 <div
-                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[375px] max-md:min-w-[425px] min-w-[476px] pt-2">
+                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-md:min-w-[425px] min-w-[476px] pt-2">
                     <div
-                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[400px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
                         <div class="flex flex-col items-center">
-                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                            <img class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-16 shadow-slider-box rounded-full"
                                 src="./assets/images/svg/code-syne.svg" alt="img"></div>
                         <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
                         <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -737,14 +746,14 @@
                     </div>
                 </div>
                 <div
-                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[375px] max-md:min-w-[425px] min-w-[476px] pt-2">
+                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-md:min-w-[425px] min-w-[476px] pt-2">
                     <div
-                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[400px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
                         <div class="flex flex-col items-center">
-                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                            <img class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-16 shadow-slider-box rounded-full"
                                 src="./assets/images/svg/urawarrior.svg" alt="img"></div>
                         <p class="text-2xl font-bold text-start">Urawarrior</p>
-                        <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        <p class="max-w-[395px]">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.” </p>
@@ -762,11 +771,11 @@
                     </div>
                 </div>
                 <div
-                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[375px] max-md:min-w-[425px] min-w-[476px] pt-2">
+                    class="bg-twilight rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[360px] max-sm:min-w-[337px] max-md:min-w-[425px] min-w-[476px] pt-2">
                     <div
-                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[400px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
+                        class="rounded-[48px] min-h-[446px] max-md:min-h-[400px] max-sm:min-h-[375px] max-sm:w-[337px] max-md:w-[425px] w-[476px] bg-white shadow-step-box flex flex-col px-6">
                         <div class="flex flex-col items-center">
-                            <img class="size-[163px] z-10 -mt-16 shadow-slider-box rounded-full"
+                            <img class="size-[163px] max-lg:size-32 max-md:size-28 max-sm:size-24 z-10 -mt-16 shadow-slider-box rounded-full"
                                 src="./assets/images/svg/code-syne.svg" alt="img"></div>
                         <p class="text-2xl font-bold text-start">CodeSync Inc.</p>
                         <p class="max-w-[395px] ">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -797,7 +806,7 @@
             src="./assets/images/webp/blue-layer-2.webp" alt="img">
         <div class="container">
             <div class="text-center">
-                <h2 class="text-6xl font-bold leading-lg max-lg:text-5xl max-md:text-4xl max-sm:text-3xl">
+                <h2 class="text-6xl font-bold leading-lg max-lg:text-[44px] max-md:text-4xl max-sm:text-3xl">
                     Are you ready to scale?</h2>
                 <button
                     class="text-base text-center font-medium border border-transparent max-w-[195px] mx-auto mt-7 text-white rounded-full py-5 px-7 duration-300 ease-linear bg-twilight hover:bg-white hover:border-twilight hover:text-twilight">Start
@@ -812,7 +821,7 @@
     <!-- ==slider bottom== -->
     <section class="bg-milkWhite">
         <div class="container py-16 relative">
-            <div class="absolute -left-14 top-[35%] group max-xl:hidden">
+            <div class="absolute -left-11 top-[35%] group max-xl:hidden">
                 <button
                     class="prev items-center flex justify-center bg-[#EEEEEC] group-hover:bg-[#3B5998] size-[35px] rounded-full cursor-pointer"
                     aria-label="Previous Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
@@ -843,7 +852,7 @@
                 <img [aria-hidden="true" ] src="./assets/images/svg/brooks.svg" alt="noguchi"
                     class="max-w-[117px] max-h-7">
             </div>
-            <div class="absolute -right-16 top-[35%] group max-xl:hidden">
+            <div class="absolute -right-11 top-[35%] group max-xl:hidden">
                 <button
                     class="next items-center flex justify-center bg-[#EEEEEC] group-hover:bg-[#3B5998] size-[35px] rounded-full cursor-pointer"
                     aria-label="Next Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
@@ -857,7 +866,7 @@
     </section>
 
     <!-- ==footer== -->
-    <footer class="bg-milkWhite">
+    <footer class="bg-milkWhite max-lg:px-5">
         <div class="border border-dashed max-w-[1600px] border-twilight mx-auto mb-16 max-md:mb-10 max-sm:mb-8"></div>
         <div class="flex max-w-[1600px] mx-auto flex-wrap max-lg:justify-center max-lg:items-center px-3">
             <div class="w-4/12 max-lg:w-full flex max-lg:justify-center max-lg:items-center max-lg:mb-5"> <a

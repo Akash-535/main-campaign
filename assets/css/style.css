@@ -96,3 +96,14 @@
   gap: 47px;
   align-items: center;
 }
+.slider-footer.slick-dotted.slick-slider {
+  display: unset !important;
+}
+.slider-footer .slick-dots {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  position: unset;
+}

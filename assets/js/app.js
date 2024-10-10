@@ -96,7 +96,7 @@ $(".slider-footer").slick({
     centerMode: true,
     focusOnSelect: true,
     nextArrow: ".prev",
-    prevArrow: ".next",
+    prevArrow: ".next",  
         responsive: [
         {
             breakpoint: 1024,
@@ -105,7 +105,8 @@ $(".slider-footer").slick({
                 slidesToScroll: 1,
                 autoplay:true,
                 autoplaySpeed:0,
-                     }
+                dots: true,
+                                   }
         },
         {
             breakpoint: 992,
@@ -114,6 +115,7 @@ $(".slider-footer").slick({
                 slidesToScroll: 1,
                 autoplay:true,
                 autoplaySpeed:0,
+                dots: true,
                          }
         },
         {
@@ -123,6 +125,7 @@ $(".slider-footer").slick({
                 slidesToScroll: 1,
                   autoplay:true,
                 autoplaySpeed:0,
+                dots: true,
                            }
         },
       
