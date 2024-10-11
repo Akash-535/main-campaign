@@ -90,7 +90,13 @@
 .slider .slick-dots li button:before {
   color: transparent !important;
 }
-
+.slider button.slick-next {
+  display: none !important;
+}
+.slider button.slick-prev {
+  display: none !important;
+}
+/* ==footer slider */
 .slider-footer .slick-track {
   display: flex;
   gap: 47px;
