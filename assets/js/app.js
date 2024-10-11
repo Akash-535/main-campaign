@@ -55,7 +55,7 @@ $(".slider").slick({
     centerMode: true,
        slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     variableWidth: true,
@@ -152,3 +152,9 @@ const card = document.querySelectorAll('.card');
                 card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale(1)`;
             });
         });
+
+     // Back to top button js
+let topBtn = document.querySelector(".top-btn");
+
+topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+window.onscroll = () => topBtn.style.opacity = window.scrollY > 150 ? 1 : 0;
