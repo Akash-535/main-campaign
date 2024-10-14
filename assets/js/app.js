@@ -164,5 +164,5 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       document.getElementById('preloader').style.display = 'none';
       document.getElementById('main-content').classList.remove('hidden');
-    }, 2000); // 5 seconds delay
+    }, 2000);
   });
