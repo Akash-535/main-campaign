@@ -16,10 +16,10 @@ tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tab.active');
         if (isActiveTab) {
-                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'font-bold','hover:bg-opacity-100');
+                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'font-bold','hover:bg-opacity-100', 'xl:min-h-[62px]');
             isActiveTab.classList.add('bg-roseWhite', 'text-steel',); }
         contents.forEach(content => content.classList.add('hidden'));     
-        tab.classList.add('active', 'bg-twilight', 'text-white', 'font-bold','hover:bg-opacity-100');
+        tab.classList.add('active', 'bg-twilight', 'text-white', 'font-bold','hover:bg-opacity-100' ,'xl:min-h-[62px]');
         tab.classList.remove('bg-roseWhite', 'text-steel',);
         
         const target = tab.getAttribute('data-target');
@@ -35,10 +35,10 @@ tabTwo.forEach(tab => {
     tab.addEventListener('click', () => {
         const isActiveTab = document.querySelector('.tabTwo.active');
         if (isActiveTab) {
-                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'font-bold', 'hover:bg-opacity-100');
+                isActiveTab.classList.remove('active', 'bg-twilight', 'text-white', 'font-bold', 'hover:bg-opacity-100','xl:min-h-[62px]');
             isActiveTab.classList.add('bg-roseWhite', 'text-steel',); }
         contentsTwo.forEach(content => content.classList.add('hidden'));     
-        tab.classList.add('active', 'bg-twilight', 'text-white', 'font-bold', 'hover:bg-opacity-100');
+        tab.classList.add('active', 'bg-twilight', 'text-white', 'font-bold', 'hover:bg-opacity-100','xl:min-h-[62px]');
         tab.classList.remove('bg-roseWhite', 'text-steel',);
         
         const target = tab.getAttribute('data-target');
